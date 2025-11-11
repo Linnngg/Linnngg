@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            overflow-x: hidden;
+            scroll-snap-type: y mandatory;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        header {
+            background-color: #ff69b4; /* 粉色 */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            scroll-snap-align: start;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+        nav button {
+            background-color: #87CEEB; /* 淺藍色 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #00bfff; /* 更亮的藍色 */
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 100vh; /* 每個區塊佔滿一個視窗 */
+            scroll-snap-align: start;
+            overflow-y: auto; /* 當內容超出時顯示滾動條 */
+            width: 80%; /* 設置內容區域寬度 */
+            max-width: 900px; /* 設定最大寬度 */
+        }
+        h2 {
+            color: #ff69b4; /* 粉色 */
+            text-align: center; /* 標題置中 */
+        }
+        .intro-section {
+            display: flex;
+            justify-content: center; /* 使圖片和文本居中 */
+            align-items: center;
+            gap: 20px;
+        }
+        .intro-section div {
+            flex: 1;
+            text-align: center; /* 使文字居中 */
+        }
+        .intro-section img {
+            max-width: 100%;
+            border-radius: 8px;
+            max-height: 300px; /* 限制圖片的最大高度 */
+            object-fit: cover; /* 使圖片保持比例並填滿區域 */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff69b4; /* 粉色 */
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>歡迎來到我的自我介紹網站</h1>
+    </header>
+
+    <!-- 目錄導航 -->
+    <nav>
+        <button onclick="location.href='#personality'">性格介紹</button>
+        <button onclick="location.href='#hobbies'">我的興趣</button>
+        <button onclick="location.href='#idol'">我的偶像</button>
+    </nav>
+
+    <div class="container">
+
+        <!-- 性格介紹區塊 -->
+        <section id="personality">
+            <h2>性格介紹</h2>
+            <p>我是一個開朗、外向的人，熱愛與他人交往和分享我的想法。我經常保持樂觀，並且善於應對挑戰和壓力。雖然有時會有點衝動，但我總是會從中學到很多，並且快速調整自己的方向。我喜歡探索新事物，對未來充滿期待。</p>
+            <p>此外，我非常注重細節，並且在工作和生活中尋求高效率。我喜歡將每一個小目標分解，並一步步實現，這樣可以帶來持續的成就感和動力。</p>
+        </section>
+
+        <!-- 興趣介紹區塊 -->
+        <section id="hobbies">
+            <h2>我的興趣</h2>
+            <div >
+                <div>
+                    <p>我對攝影、旅行和閱讀有濃厚的興趣。每當我拿起相機，總是能夠捕捉到最動人的瞬間。旅行讓我接觸到不同的文化和風景，這對我來說是無價的經歷。</p>
+                    <p>我也熱愛閱讀，尤其是科幻小說和心理學方面的書籍。這些書籍不僅能開闊我的視野，還能幫助我更好地理解人類行為和思維。</p>
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- 偶像介紹區塊 -->
+        <section id="idol">
+            <h2>我的偶像</h2>
+            <div class="intro-section">
+                <div>
+                    <p>我的偶像是金桐檈，他是一位深具創造力和影響力的人物。他在音樂、藝術及多元創意領域都有傑出的成就。他的作品富有深度，並且總是帶給我靈感和動力。</p>
+                    <p>我特別欣賞他在創作過程中的專注和對細節的極致追求。他不僅是一位才華橫溢的藝術家，還是一位勇於挑戰自我、不斷突破自我的人。</p>
+                </div>
+                <div>
+                    <img src="https://p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/ff0d9cebe34b47ffb6ea44336f9078b2~tplv-xv4ileqgde-resize-w:750.image" alt="金桐檈">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 我的個人網站</p>
+    </footer>
+
+</body>
+</html>
